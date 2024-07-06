@@ -1,0 +1,75 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- The HTML 4.01 Transitional DOCTYPE declaration-->
+<!-- above set at the top of the file will set     -->
+<!-- the browser's rendering engine into           -->
+<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- with a "Standards Mode" doctype is supported, -->
+<!-- but may lead to some differences in layout.   -->
+
+<html>
+  <head>
+    <title>CV</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Resume Form</title>
+      <style>
+          body {
+              font-family: Arial, sans-serif;
+              margin: 20px;
+          }
+          .container {
+              max-width: 600px;
+              margin: auto;
+          }
+          label {
+              display: block;
+              margin-top: 10px;
+          }
+          input, textarea, select {
+              width: 100%;
+              padding: 10px;
+              margin-top: 5px;
+              box-sizing: border-box;
+          }
+          button {
+              margin-top: 20px;
+              padding: 10px 20px;
+              background-color: #4CAF50;
+              color: white;
+              border: none;
+              cursor: pointer;
+          }
+          button:hover {
+              background-color: #45a049;
+          }
+      </style>
+  </head>
+  <body>
+      <h1>CV Form</h1>
+      <form action="/application" method="post">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phoneNumber">Phone Number:</label>
+          <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+          <label for="age">Age:</label>
+          <input type="text" id="age" name="age" required>
+
+          <label for="education">Educational Background:</label>
+          <textarea id="education" name="education" rows="4" required></textarea>
+
+          <label for="workExperience">Work Experience:</label>
+          <textarea id="workExperience" name="workExperience" rows="4" required></textarea>
+
+          <label for="skills">Skills:</label>
+          <textarea id="skills" name="skills" rows="4" required></textarea>
+
+
+          <button type="submit">Submit</button>
+      </form>
+  </body>
+</html>
